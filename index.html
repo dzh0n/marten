@@ -21,11 +21,66 @@
             max-width: 1780px;
             margin: 0 auto;
             height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .header-top_logo {
             width: 225px;
             height: 49px;
             display: block;
+        }
+        .header-top_menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .header-top_callback {
+            margin-left: 30px;
+            width: 165px;
+            height: 38px;
+            background: #F7A521;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #000000;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
+        .header-top_callback:hover {
+            background-color: #ffc700;
+        }
+        .header-top_menu nav {
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.05em;
+            color: #000000;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 83px;
+        }
+        .header-top_menu nav a {
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #000000;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 83px;
+            transition: color 0.2s ease-in-out;
+        }
+        .header-top_menu nav a:hover {
+            color: #F7A521;
+        }
+        .header-top_menu nav span {
+            display: inline-block;
+            margin: 0 15px;
         }
     </style>
 </head>
@@ -54,6 +109,17 @@
                     <path d="M60.0007 20.682C60.0007 20.682 55.8151 18.7877 57.3307 12.9321C57.316 13.3756 57.4038 13.8166 57.5877 14.2223C57.7716 14.6281 58.0469 14.9881 58.393 15.2757C58.393 15.2757 57.0828 13.1049 59.4341 10.146C61.7855 7.18707 62.8549 6.56486 61.8634 4C61.8634 4 66.5235 6.76535 65.1 13.022C65.5733 12.7678 65.9526 12.3745 66.184 11.8979C66.4154 11.4214 66.4871 10.8858 66.389 10.3672C66.389 10.3672 70.8083 15.8979 65.0079 21C65.0079 21 66.7643 18.6356 64.4201 16.769C62.0759 14.9024 62.3733 13.0911 62.9399 11.7361C61.9897 12.3166 61.299 13.2259 61.0062 14.2822C60.7134 15.3384 60.8399 16.4636 61.3605 17.4327C61.3605 17.4327 62.0688 18.6495 61.5801 18.8914C61.0914 19.1334 60.3123 17.8752 60.454 17.1423C60.4256 17.1423 59.0092 18.0203 60.0007 20.682Z" fill="#FAA431"/>
                 </svg>
             </a>
+            <div class="header-top_menu">
+                <nav>
+                    <a href="#">О компании</a><span>/</span>
+                    <a href="#">Услуги и цены</a><span>/</span>
+                    <a href="#">Портфолио</a><span>/</span>
+                    <a href="#">Вакансии</a><span>/</span>
+                    <a href="#">Блог</a><span>/</span>
+                    <a href="#">Контакты</a>
+                </nav>
+                <a href="#popup:myform" class="header-top_callback">Связаться</a>
+            </div>
         </div>
     </header>
 </body>
